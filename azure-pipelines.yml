@@ -1,3 +1,11 @@
-pool: MyAgentPool
+trigger:
+- main
+
+pool: 
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfigurations: 'Release'
+
 steps:
 - bash: echo hello world
