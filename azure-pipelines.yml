@@ -2,8 +2,7 @@ trigger:
 - main
 
 pool: 
-  name: Default
-  demands: Agent.Version -equals 3.243.1
+  vmImage: macOS-latest
 
 variables:
   buildConfiguration: 'Release'
