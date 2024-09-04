@@ -2,7 +2,8 @@ trigger:
 - main
 
 pool: 
-  vmImage: linux-latest
+  name: Default
+  demands: Agent.Version -equals 3.243.1
 
 variables:
   buildConfiguration: 'Release'
